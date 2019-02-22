@@ -26,7 +26,7 @@ def lets_send_it():
 	url = 'https://www.virustotal.com/vtapi/v2/url/scan'
 	#params is your key what is a api key it is essentially a password ro be able to use the api. 
     #url calls links which links is all the urls we want to check.
-	params = {'apikey': '', 'url': links}
+	params = {'apikey': 'YOUR API KEY HERE', 'url': links}
 	#posts the url that you want to be checked 
 	response = requests.post(url, params=params)
 
@@ -37,7 +37,7 @@ def lets_send_it():
 def give_me_that():
 	url = 'https://www.virustotal.com/vtapi/v2/url/report'
 
-	params = {'apikey': '', 'resource': links}
+	params = {'apikey': 'YOUR API KEY HERE', 'resource': links}
 	#grabs the report for the url you posted 
 	response = requests.get(url, params=params)
 
